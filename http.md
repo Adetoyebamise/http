@@ -186,3 +186,24 @@ This request uses the **GET** method, which asks for data from the host server l
 6. Proxy: it is a software\hardware acting as a middle person between clients and servers.
 7. Cache: method for storing data on the client or the serber to speed up performance.
 8. Cookie: this is a string of data passed back and forth between the client and server to create a stateful session. 
+
+
+
+## HTTP/2
+
+The primary goals for HTTP/2 are to reduce latency by enabling full request and response multiplexing, uses efficient compression of HTTP header fields, and add support for request prioritization and server push. To implement these requirements, there is a large supporting cast of other protocol enhancements, such as new flow control, error handling, 
+Request and Response Multiplexing
+
+**With HTTP/1**, if the client wants to make multiple parallel requests to improve performance, then multiple TCP connections must be used; see Using Multiple TCP Connections. This behavior is a direct consequence of the HTTP/1.x delivery model, which ensures that only one response can be delivered at a time (response queuing) per connection. Worse, this also results in head-of-line blocking and inefficient use of the underlying TCP connection.
+
+The new binary framing layer in **HTTP/2** removes these limitations, and enables full request and response multiplexing, by allowing the client and server to break down an HTTP message into independent frames then reassemble them on the other end.
+                                            ##FEATURES OF HTTP/2
+**Server Push**
+Another powerful new feature of HTTP/2 is the ability of the server to send multiple responses for a single client request. That is, in addition to the response to the original request, the server can push additional resources to the client  without the client having to request each one.
+
+**Header Compression**
+Each HTTP transfer carries a set of headers that describe the transferred resource and its properties. In HTTP/1.x, this metadata is always sent as plain text 
+ **HTTP secure** 
+http/2 provides secure http to ensure end to end encryption using ssl certificate and it is useful for businesses and sites with sensitive information like credit card details and ecommerce platforms.
+ **HTTP optimisation**
+http/2 provides more means of optimization of websites so they can run efficiently and for function optimal both in technical performance and percieve,browser performance. images,codes,server delivery,browser handling, caching.
