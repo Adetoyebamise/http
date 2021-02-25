@@ -166,3 +166,23 @@ Status code 502 means Bad Gateway; meaning the server acts as a literal gateway 
 Status code 503 Service Unavailable; which is encountered when a server is overloaded or temporarily unavailable, or something else goes wrong.
 
 There are more HTTP status messages, but these are most likely to be encountered when working with regular websites.
+
+## HTTP/1.1
+ The Hypertext Transfer Protocol, or **HTTP**, is an application protocol that has been the de facto standard for communication on the World Wide Web since its invention in 1989. From the release of HTTP/1.1 in 1997 until recently, there have been few revisions to the protocol.  
+ > HTTP is a system of rules that allows commication of information between different entities. it was developed by ***Timothy Berners-Lee*** in 1989 as a communication standard for the World Wide Web, HTTP is a top-level application protocol that exchanges information between a client computer and a local or remote web server. In this process, a client sends a text-based request to a server by calling a method like **GET** *or* **POST**. In response, the server sends a resource like an HTML page back to the client.
+
+>For example, let’s say you are visiting a website at the domain www.example.com. When you navigate to this URL, the web browser on your computer sends an HTTP request in the form of a text-based message, similar to the one shown here:  
+>
+> GET /index.html HTTP/1.1  Host: www.example.com
+
+This request uses the **GET** method, which asks for data from the host server listed after Host:. In response to this request, the *example.com* web server returns an HTML page to the requesting client, in addition to any images, stylesheets, or other resources called for in the HTML. Note that not all of the resources are returned to the client in the first call for data. The requests and responses will go back and forth between the server and client until the web browser has received all the resources necessary to render the contents of the HTML page on your screen.
+
+### TERMINOLOGIES USED:
+1. TCP (Transmission Control Protocol)
+2. IP (Internet Protocol)
+3. DNS (Domain Name server)
+4. Resource: this is the name of a file/files available on a server following a URL
+5. Server: it is a computer on the internet running some form of data storage and sharing application, most commonly a web server application.
+6. Proxy: it is a software\hardware acting as a middle person between clients and servers.
+7. Cache: method for storing data on the client or the serber to speed up performance.
+8. Cookie: this is a string of data passed back and forth between the client and server to create a stateful session. 
