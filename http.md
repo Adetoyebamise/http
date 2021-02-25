@@ -189,7 +189,7 @@ This request uses the **GET** method, which asks for data from the host server l
 
 
 
-                                    #HTTP/2
+## HTTP/2
 
 The primary goals for HTTP/2 are to reduce latency by enabling full request and response multiplexing, uses efficient compression of HTTP header fields, and add support for request prioritization and server push. To implement these requirements, there is a large supporting cast of other protocol enhancements, such as new flow control, error handling, 
 Request and Response Multiplexing
